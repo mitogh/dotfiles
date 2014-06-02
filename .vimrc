@@ -7,7 +7,7 @@ filetype plugin indent on
 " => General configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
-set history=700
+set history=1000
 set nocompatible
 set modelines=0
 " Enable filetype plugins
@@ -42,6 +42,8 @@ set ruler
 set cmdheight=2
 " A buffer becomes hidden when it is abandoned
 set hid
+"Allow backspace in insert mode
+set backspace=indent,eol,start 
 " A configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -95,6 +97,8 @@ set laststatus=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tabs, windows, spaces and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show the status line
+set laststatus=2
 " Treat long lines as break lines
 map j gj
 map k gk
@@ -108,8 +112,9 @@ set copyindent
 " Use spaces insted of tabs
 set expandtab
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 " Linebreak on 500 characters
 set lbr
 set tw=500
@@ -117,26 +122,11 @@ set tw=500
 set wrapmargin=10
 " Hide the mouse when characters are typed
 set mousehide
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Key mappings for plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Toogle NerdTree with Ctrl + n
-map <C-n> :NERDTreeToggle<CR>
-" Toogle NerdTree with Ctrl + N
-map <C-N> :NERDTreeToggle<CR>
-"See help completion for source,
-""Use the Linux dictionary when spelling is in doubt.
-"Window users can copy the file to their machine.
-function! Tab_Or_Complete()
-  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-      return "\<C-N>"
-  else
-        return "\<Tab>"
-  endif
-endfunction
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-:set dictionary="/usr/dict/words"
-set visualbell
+"Show incomplete cmds down the bottom
+set showcmd
 
 " Fast save
 nmap <leader>w :w!<cr>
+
+" Custom settings
+so ~/.vim/settings.vim
