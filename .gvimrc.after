@@ -1,5 +1,4 @@
-"" Change the leader to be the ',' key
-
+" Where the Leader is the space
 " Map the most frecuent action
 " <Space>o to open a new file:
 nnoremap <Leader>o :CtrlP<CR>
