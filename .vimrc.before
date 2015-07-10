@@ -1,3 +1,0 @@
-call janus#disable_plugin('nerdcommenter')
-
-let mapleader = "\<Space>"
