@@ -93,7 +93,7 @@ alias gs="git status"
 alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias www="cd ~/Documents/vagrant-local/www/"
 
-source /Users/Mitogh/.gulp-autocompletion-zsh/gulp-autocompletion.zsh
+source ~/.gulp-autocompletion-zsh/gulp-autocompletion.zsh
 
 function _composer {
   local -x COMP_LINE="$words"
