@@ -1,4 +1,4 @@
 # .[files] #
 
-Personal configuration files, to have a backup of this config files. Everything is done under 100%
-personal preferences.
+Personal configuration files, as a backup mechanism for this files. If required at some point in
+time or to set up a new machine or another environment.
