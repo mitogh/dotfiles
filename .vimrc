@@ -74,10 +74,6 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
-
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
@@ -94,7 +90,7 @@ set foldcolumn=1
 set laststatus=2
 " Sets how many lines of history VIM has to remember
 set history=1000
-" use many muchos levels of undo
+" use many levels of undo
 set undolevels=1000      
 " change the terminal's title
 set title                
@@ -150,7 +146,7 @@ set smarttab
 
 " Linebreak on 500 characters
 set lbr
-set tw=500
+set tw=100
 " Set numeric on the left
 set nu
 
