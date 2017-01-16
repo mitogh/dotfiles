@@ -1,3 +1,4 @@
 # .[files] #
 
-This repo is for have a snapshot of all the important configuration file and for the record of each one.
+Personal configuration files, to have a backup of this config files. Everything is done under 100%
+personal preferences.
