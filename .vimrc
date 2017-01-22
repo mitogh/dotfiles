@@ -80,7 +80,6 @@ set wrap "Wrap lines
 """"""""""""""""""""""""""""""
 " => Folding
 """"""""""""""""""""""""""""""
-set foldmethod=indent
 set foldlevel=1
 set foldcolumn=1
 " => Status line
