@@ -1,0 +1,17 @@
+Host ssh.dev.promoter ssh.prod.promoter ssh.staging.promoter
+user ubuntu
+identityfile "/home/mitogh/tribe/promoter/ansible/.aws/promoter.pem"
+
+
+Host ssh.dev.ea ssh.prod.ea ssh.staging.ea
+user ubuntu
+identityfile "/home/mitogh/tribe/ea/ansible/.aws/ea-web.pem"
+
+Host ssh.dev.loxi ssh.prod.loxi ssh.staging.loxi
+user ubuntu
+identityfile "/home/mitogh/tribe/calendar-saas/ansible/.aws/calendar-saas-web.pem"
+
+Host *
+TCPKeepAlive yes
+ServerAliveInterval 20
+ServerAliveCountMax 80

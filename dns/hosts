@@ -1,0 +1,32 @@
+127.0.0.1	localhost
+127.0.1.1	mitogh
+
+# Loxi
+#34.218.108.160 ssh.prod.loxi
+34.219.164.166 ssh.prod.loxi
+34.211.200.153 ssh.staging.loxi
+34.210.171.89 ssh.dev.loxi
+
+# EA 
+52.89.196.208 ssh.prod.ea
+54.70.185.39 ssh.staging.ea
+35.165.103.151 ssh.dev.ea
+
+# Promoter
+52.40.129.194 ssh.dev.promoter
+35.163.89.89 ssh.staging.promoter
+54.245.1.203 ssh.prod.promoter
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+## Local by Flywheel - Start ##
+::1 consumer.local #Local Site
+127.0.0.1 consumer.local #Local Site
+::1 www.consumer.local #Local Site
+127.0.0.1 www.consumer.local #Local Site
+## Local by Flywheel - End ##
